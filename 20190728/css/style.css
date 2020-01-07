@@ -1,0 +1,758 @@
+@charset "utf-8";
+/*===== banner部分 start =====*/
+
+/* =====  轮播图swiper-nav部分   =====*/
+/* =====  轮播图swiper-nav部分   =====*/
+/* =====  轮播图swiper-nav部分   =====*/
+
+.banner{
+   margin-top: 90px; 
+   height: 600px;
+   overflow: hidden;
+   position: relative;
+}
+.swiper-nav{
+    width: 9999px;
+    animation: my-slide 24s infinite alternate;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+@keyframes my-slide{
+    6.25%{left: 0px;}
+    12.5%{left: 0px;}
+    19.75%{left: -1200px;}
+    25%{left: -1200px;}
+    31.25%{left: -2400px;}
+    37.5%{left: -2400px;}
+    43.75%{left: -3600px;}
+    50%{left: -3600px;}
+    56.25%{left: -4800px;}
+    62.5%{left: -4800px;}
+    69.75%{left: -6000px;}
+    75%{left: -6000px;}
+    81.25%{left: -7200px;}
+    87.5%{left: -7200px;}
+    93.75%{left: -8400px;}
+    100%{left: -8400px;}
+}
+/* 给图片设置左浮动 */
+.swiper-nav>img{
+    float: left;
+    /* display: block; 
+        行内元素浮动后自动具有块状元素的特点，可以设置宽高。
+    */
+    cursor: pointer;
+}
+.banner .swiper-button-left{
+    height: 60px;
+    width: 60px;
+    position: absolute; 
+    background: url(../images/icon-arrow-left.png) 45% 50% no-repeat rgba(0,0,0,0.1);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+    cursor: pointer;
+}
+.banner .swiper-button-right{
+    height: 60px;
+    width: 60px;
+    position: absolute; 
+    background: url(../images/icon-arrow-right.png) 45% 50% no-repeat rgba(0,0,0,0.1);
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    cursor: pointer;
+}
+.swiper-pagination{
+    /* background: yellow; */
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 30px;
+    text-align: center;
+}
+/* 给span设置左浮动 */
+.swiper-pagination-line{
+    /* display: block; */
+    float: left;
+    width: 50px;
+    height: 2px;
+    margin: 0 5px;
+    /* 红色背景测试，方便看到字体或图片在什么地方，再进行定位 */
+    /* background-color: red; */
+    background-color: rgba(255,255,255,0.4);
+    cursor: pointer;
+}
+.swiper-pagination .second-pag{
+    margin-left: 365px;
+}
+span.on{
+    background-color: red;
+}
+.swiper-pagination .on{
+    animation: pagination-slide 24s infinite alternate;
+    position: absolute;
+    left: 360px;
+    top: 0px;
+}
+@keyframes pagination-slide{
+    6.25%{left: 360px;}
+    12.5%{left: 360px;}
+    19.75%{left: 420px;}
+    25%{left: 420px;}
+    31.25%{left: 480px;}
+    37.5%{left: 480px;}
+    43.75%{left: 540px;}
+    50%{left: 540px;}
+    56.25%{left: 600px;}
+    62.5%{left: 600px;}
+    69.75%{left: 660px;}
+    75%{left: 660px;}
+    81.25%{left: 720px;}
+    87.5%{left: 720px;}
+    93.75%{left: 780px;}
+    100%{left: 780px;}
+}
+.skew-mask{
+    width: 100%;
+    height: 17px;
+    background: url(../images/skew-mask.png) no-repeat;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+/* =====  找到适合你的荣耀手机 start ===== */
+/* =====  找到适合你的荣耀手机 start ===== */
+/* =====  找到适合你的荣耀手机 start ===== */
+.find-fit-pro{
+    background-color: white;
+    padding: 0 0 150px;
+}
+.find-fit-pro h3{
+    font-size: 36px;
+    text-align: center;
+    line-height: 40px;
+    padding: 50px 0px 42px;
+    font-weight: normal;
+}
+div.pro-description .sel-item{
+    float: left;
+    width: 150px;
+    /* border: solid 1px #a6a6a6; */
+    margin: 0px 12px;
+    text-align: left;
+    position: relative;
+}
+div.sel-item:first-of-type{
+    margin-left: 264px;
+}
+div.pro-description .sel-item span{
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 40px;
+    width: 150px;
+    padding: 0 10px;
+    text-align: left;
+    color: #AAAAAA;
+    background: url(../images/bt.png) 120px center no-repeat;
+    border: solid 1px #a6a6a6;
+    border-radius: 6px;
+}
+div.pro-description .sel-item ul{
+    box-sizing: border-box;
+    position: absolute;
+    top: 100%;
+    left: 2px;
+    width: 98%;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    overflow: hidden;
+    display: none;
+    z-index: 100;
+}
+div.pro-description .sel-item li{
+    font-size: 14px;
+    line-height: 1.4285143;
+    width: 148px;
+    padding: 6px 0 6px 15px;
+    border-bottom: 1px solid #e6e8ea;
+    color: #555;
+    font-size: 14px;
+    text-align: left;
+}
+div.pro-description .sel-item:hover{
+    cursor: pointer;
+}
+div.pro-description .sel-item:hover>ul{
+    display: block;
+    cursor: pointer;
+} 
+div.pro-description .sel-item li:hover{
+    color:white;
+	background: #00B5E2;
+}
+
+/* 注意细节！！！字母不要搞错了 */
+/* div.slt-item li:hover{
+	color:white;
+	background: #00B5E2;
+}  */
+
+
+/* =====  找到适合你的荣耀手机 end ===== */
+/* =====  找到适合你的荣耀手机 end ===== */
+/* =====  找到适合你的荣耀手机 end ===== */
+
+/* =====  荣耀20系列手机 start ===== */
+/* =====  荣耀20系列手机 start ===== */
+/* =====  荣耀20系列手机 start ===== */
+.ry20{
+    background: white;
+    position: relative;
+}
+div.ry20-pic{
+    float: left;
+}
+.ry20-pic img{
+    margin-left: 120px;
+    cursor: pointer;
+}
+div.ry20-info{
+    float: left;
+    margin-top: 100px;
+    margin-left: 40px;
+}
+div.ry20-info>img:first-child{
+    height: 34px;
+}
+div.ry20-info>img:nth-of-type(2){
+    display: block;
+    height: 25px;
+    margin: 20px 0 16px;
+}
+.ry20-info p{
+    font-size: 14px;
+    line-height: 34px;;
+}
+div.ry20-button{
+    margin-top: 42px;
+}
+.ry20-button button{
+    box-sizing: border-box;
+    height: 36px;
+    width: 132px;
+    font-size: 16px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button.buy-btn{
+	color: white;
+	background: #E5004F;
+}
+
+button.com-btn{
+	margin-left: 16px;
+	color: #9A9A9A;
+	border: solid 1px #9A9A9A;
+}
+.skew-mask1{
+    width: 100%;
+    height: 17px;
+    background: url(../images/skew-mask.png) no-repeat;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+/* =====  荣耀20系列手机 end ===== */
+/* =====  荣耀20系列手机 end ===== */
+/* =====  荣耀20系列手机 end ===== */
+
+
+/* =====  相关推荐  start ===== */
+/* =====  相关推荐  start ===== */
+/* =====  相关推荐  start ===== */
+.relative-recommend{
+    padding: 30px 0px 15px;
+}
+.recommend-header{
+    height: 30px;
+    position: relative;
+    margin-bottom: 20px;
+}
+p.rec-p{
+    font-size: 24px;
+    line-height: 30px;
+    padding-left: 7px;
+    border-left: solid 3px #00b5e2;
+}
+.more-rec{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+    line-height: 30px;
+    color: #909090;
+}
+.recommend-pro{
+    width: 100%;
+    height: 370px;
+}
+.recommend-pro .rec-phone{
+    float: left;
+    height: 370px;
+    width: 285px;
+    background: white;
+    text-align: center;
+    position: relative;
+}
+.rec-phone .icon-rec{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 85px;
+    right: 20px;
+    color: white;
+    font-size: 13px;
+    font-style: normal;
+    text-align: center;
+}
+.rec-phone .new-pro{
+    background-color: #0071cd;
+}
+.rec-phone .hot-sale{
+    background-color: #e50150;
+}
+.rec-phone h3{
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 30px;
+    margin-bottom: 4px;
+}
+.rec-phone p{
+    font-size: 14px;
+    line-height: 20px;  
+}
+.rec-pic{
+    margin-top: 22px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.rec-button button{
+    box-sizing: border-box;
+    height: 30px;
+    width: 110px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button.buy-btn{
+	color: white;
+	background: #E5004F;
+}
+
+button.com-btn{
+	margin-left: 16px;
+	color: #9A9A9A;
+	border: solid 1px #9A9A9A;
+}
+div.first-rec,
+div.second-rec,
+div.third-rec{
+    margin-right: 20px;
+}
+.news-pic .news-figure{
+    height: 270px;
+    width: 380px;
+    overflow: hidden;
+}
+/* 过渡的必要条件 */
+.rec-phone{
+    transition: transform .3s linear;
+}
+/* 鼠标移入，盒子上移并出现阴影*/
+.rec-phone:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* =====  相关推荐  end ===== */
+/* =====  相关推荐  end ===== */
+/* =====  相关推荐  end ===== */
+
+
+/* =====  商城购物  start ===== */
+/* =====  商城购物  start ===== */
+/* =====  商城购物  start ===== */
+.shopping-mall{
+    height: 480px;
+    background: url(../images/index-flagship.jpg) no-repeat;
+    position: relative;
+    margin-bottom: 30px;
+}
+.huawei-mall{
+    position: absolute;
+    width: 360px;
+    top: 195px;
+    left: 240px;
+    color: #fff;
+}
+.huawei-shop-logo{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+}
+div.click-go{
+    text-align: center;
+}
+div.click-go a{
+    display: inline-block;
+    width: 175px;
+    height: 43px;
+    font-size: 16px;
+    line-height: 43px;
+    color: white;
+    background: url(../images/btn-pink.png) no-repeat;
+}
+.other-shop{
+    height: 100%;
+    width: 250px;
+    position: absolute;
+    top: 0px;
+    right: 60px;
+    /* background: #E5004F; */
+    color: white;
+}
+.other-shop .ot-p{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    line-height: 28px;
+}
+.other-shop .det-p{
+    font-size: 14px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+.shopping-mall .other-shop .shop{
+    width: 104px;
+    height: 104px;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 3px 4px 2px rgba(0, 150, 230, 0.8);
+}
+.shopping-mall .other-shop .jd-shop{
+    /* position: absolute; */
+    left: 0px;
+    top: 157px;
+}
+.shopping-mall .other-shop .tm-shop{
+    /* position: absolute; */
+    right: 0px;
+    top: 157px;
+}
+.shopping-mall .other-shop .tb-shop{
+    /* position: absolute; */
+    left: 0px;
+    bottom: 60px;
+}
+.shopping-mall .other-shop .sn-shop{
+    /* position: absolute; */
+    right: 0px;
+    bottom: 60px;
+}
+/* =====  商城购物 end ===== */
+/* =====  商城购物 end ===== */
+/* =====  商城购物 end ===== */
+
+
+/* =====  最新消息  start ===== */
+/* =====  最新消息  start ===== */
+/* =====  最新消息  start ===== */
+.spot-news{
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.news-header{
+    height: 30px;
+    position: relative;
+    margin-bottom: 20px;
+}
+p.news-p{
+    font-size: 24px;
+    line-height: 30px;
+    padding-left: 7px;
+    border-left: solid 3px #00b5e2;
+}
+
+.spot-news .news-info .news-pic{
+    float: left;
+    width: 380px;
+    margin-right: 30px;
+    background: white;
+    /* overflow: hidden; */
+}
+.news-pic .news-figure{
+    height: 270px;
+    width: 380px;
+    overflow: hidden;
+}
+/* 过渡的必要条件 */
+.spot-news .news-info .news-pic .news-figure>img{
+    transition-property: all;
+    transition-duration: 0.7s;
+}
+/* 鼠标移入，图片缩放效果 */
+.news-figure:hover>img{
+    transform:scale(1.09);
+}
+/* .pic1:hover .news-figure>img{
+    transform:scale(1.09);
+}
+.pic2:hover .news-figure>img{
+    transform:scale(1.09);
+}
+.pic3:hover .news-figure>img{
+    transform:scale(1.09);
+} */
+.spot-news .news-info .news-pic:nth-of-type(3){
+    margin-right: 0px;
+}
+.news-pic p{
+    padding: 0px 10px;
+    overflow: hidden;
+    height: 40px;
+    line-height: 40px;
+}
+.news-pic p.pic-date{
+    overflow: hidden;
+    height: 19px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #909090;
+}
+
+/* =====  最新消息 end ===== */
+/* =====  最新消息 end ===== */
+/* =====  最新消息 end ===== */
+
+/* =====  在线客服，服务中心  start ===== */
+/* =====  在线客服，服务中心  start ===== */
+/* =====  在线客服，服务中心  start ===== */
+div.online-server{
+    height: 413px;
+    width: 1200px;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+div.online-server .online-block{
+    width: 600px;
+    height: 413px;
+    float: left;
+    background: url(../images/index-block1.jpg) no-repeat;
+}
+div.online-server .server-block{
+    width: 600px;
+    height: 413px;
+    float: right;
+    background: url(../images/index-block2.jpg) no-repeat;
+}
+div.online-server .block-title{
+    padding-top: 130px;
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+div.online-server .block-description{
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+div.online-server a{
+    display: inline-block;
+    width: 175px;
+    height: 43px;
+    font-size: 16px;
+    line-height: 43px;
+    color: white;
+    background: url(../images/btn-pink.png) no-repeat;
+}
+/* =====  在线客服，服务中心 end ===== */
+/* =====  在线客服，服务中心 end ===== */
+/* =====  在线客服，服务中心 end ===== */
+
+/* =====  site-footer start ===== */
+/* =====  site-footer start ===== */
+/* =====  site-footer start ===== */
+.site-footer{
+    width: 100%;
+    height: 290px;
+    background-image: linear-gradient(to bottom, #017acd, #00b7e1);
+    background-repeat: repeat-x;
+    color: white;
+}
+.footer-link{
+    padding: 40px 0px;
+}
+.left-link{
+    float: left;
+}
+.footer-link dl{
+    float: left;
+    margin-right: 50px;
+}
+.footer-link dl dt{
+    padding-bottom: 5px;
+    font-size: 18px;
+    line-height: 25px;
+    cursor: pointer;
+}
+.footer-link dl dd{
+   margin-top: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.right-link{
+    float: left;
+    height: 180px;
+}
+.right-link .contact-us{
+    box-sizing: border-box;
+    padding-left: 50px;
+    border-left: solid 1px rgba(255,255,255,.5);
+}
+.contact-us .link-item{
+    float: left;
+}
+.contact-us .link-item h6{
+    font-size: 14px;
+    line-height: 15px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.contact-us .link-item p{
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.contact-us .link-item .phone{
+    font-size: 18px;
+    line-height: 25px;
+}
+.contact-us .contact-tel a{
+    display: inline-block;
+    box-sizing: border-box;
+    background: url(../images/icon-custom.png) no-repeat;
+    background-position: 20px 5px;
+    border: solid 1px white;
+    border-radius: 4px;
+    width: 130px;
+    height: 36px;
+    color: white;
+    text-align: right;
+    padding: 6px 25px 4px;
+}
+.server-mail{
+    padding-left: 40px;
+}
+.contact-us .server-mail a{
+    display: inline-block;
+    box-sizing: border-box;
+    background: url(../images/ico-email.png) no-repeat;
+    background-position: 20px 6px;
+    border: solid 1px white;
+    border-radius: 4px;
+    width: 130px;
+    height: 36px;
+    color: white;
+    text-align: right;
+    padding: 5px 25px;
+}
+.focus-us{
+    padding-left: 20px;
+    position: relative;
+}
+.focus-us .icon-link{
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border: solid 1px white;
+    border-radius: 50%;
+    position: absolute;
+}
+.focus-us .weibo{
+    top: 30px;
+    left: 20px;
+}
+.focus-us .weixin{
+    top: 30px;
+    left: 60px;
+}
+.focus-us .qqkj{
+    top: 30px;
+    left: 100px;
+}
+.focus-us .xsweibo{
+    top: 30px;
+    left: 140px;
+}
+.focus-us .douban{
+    top: 70px;
+    left: 20px;
+}
+.focus-us .xqbl{
+    top: 70px;
+    left: 60px;
+}
+.focus-us .youku{
+    top: 70px;
+    left: 100px;
+}
+/* =====  site-footer end ===== */
+/* =====  site-footer end ===== */
+/* =====  site-footer end ===== */
+
+
+/* =====  copyright start ===== */
+/* =====  copyright start ===== */
+/* =====  copyright start ===== */
+div.huawei-copyright{
+    width: 100%;
+    padding: 20px 0px;
+}
+div.huawei-copyright p{
+    font-size: 14px;
+    line-height: 1.4;
+    color: #707070;
+    padding: 5px 0;
+    margin: 0;
+}
+div.huawei-copyright a{
+    font-size: 14px;
+    line-height: 1.4;
+    color: #707070;
+    padding: 5px 0;
+    margin: 0;
+}
+div.huawei-copyright a:hover{
+    color: black;
+}
+/* =====  copyright end ===== */
+/* =====  copyright end ===== */
+/* =====  copyright end ===== */
